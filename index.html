@@ -1,11 +1,148 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio | Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="particles" id="particles"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>&lt;Developer /&gt;</h1>
+            <h2>I'm a <span class="typed-text" id="typed"></span></h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1rem;">Building digital experiences with clean code</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-btn red"></div>
+                <div class="terminal-btn yellow"></div>
+                <div class="terminal-btn green"></div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line">const developer = {</div>
+                <div class="terminal-line">&nbsp;&nbsp;name: "Vinayak Chauhan",</div>
+                <div class="terminal-line">&nbsp;&nbsp;skills: ["HTML", "CSS", "JS"],</div>
+                <div class="terminal-line">&nbsp;&nbsp;passion: "Creating"</div>
+                <div class="terminal-line">};</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">// About Me</h2>
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem;">
+            <p>Hello! I'm a passionate developer who loves crafting elegant solutions to complex problems. With a strong foundation in web technologies and a keen eye for design, I create experiences that are both functional and beautiful.</p>
+            <br>
+            <p>When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">// Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Semantic markup</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Responsive design</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>ES6+ & DOM</p>
+            </div>
+            <div class="skill-card">
+                <h3>Git</h3>
+                <p>Version control</p>
+            </div>
+            <div class="skill-card">
+                <h3>APIs</h3>
+                <p>REST & Integration</p>
+            </div>
+            <div class="skill-card">
+                <h3>UI/UX</h3>
+                <p>User-centered design</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">// Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project Alpha</h3>
+                <p>A responsive web application built with vanilla JavaScript featuring real-time data visualization and interactive UI components.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Project Beta</h3>
+                <p>An elegant portfolio template with smooth animations, custom cursor effects, and dark mode toggle functionality.</p>
+                <div class="project-tags">
+                    <span class="tag">CSS3</span>
+                    <span class="tag">Animations</span>
+                    <span class="tag">JS</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Project Gamma</h3>
+                <p>Interactive dashboard with data filtering, sorting capabilities, and dynamic chart generation using Canvas API.</p>
+                <div class="project-tags">
+                    <span class="tag">Canvas</span>
+                    <span class="tag">API</span>
+                    <span class="tag">ES6+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">// Get In Touch</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Developer Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" title="GitHub">GH</a>
+            <a href="#" title="LinkedIn">LI</a>
+            <a href="#" title="Twitter">TW</a>
+        </div>
+    </footer>
+
     
 </body>
+<script src="script.js"></script>
 </html>
